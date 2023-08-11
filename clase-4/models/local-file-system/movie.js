@@ -1,5 +1,8 @@
+// los modelos deberian tener el mismo contrato para poderlos
+// intercambiar facilmente
+
 import { randomUUID } from 'node:crypto';
-import { readJSON } from '../utils.js';
+import { readJSON } from '../../utils.js';
 
 const movies = readJSON('./movies.json');
 
