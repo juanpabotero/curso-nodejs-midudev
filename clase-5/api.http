@@ -5,7 +5,7 @@
 GET http://localhost:1234/movies
 
 ### Recuperar una pelicula por id
-GET http://localhost:1234/movies/3690034f-50ed-11ee-84a7-069bcfa67376
+GET http://localhost:1234/movies/e22149d5-0508-4ae7-952b-023cd6423dda
 
 ### Recuperar todas las peliculas por un género
 GET http://localhost:1234/movies?genre=action
@@ -19,26 +19,22 @@ Content-Type: application/json
 # recibir mucha informacion pero solo procesar lo que le interesa
 {
   "fool": "fool",
-  "title": "Batman",
+  "title": "The Dark Knight",
   "year": 2008,
   "director": "Christopher Nolan",
   "duration": 152,
-  "rate": 8.8,
   "poster": "https://i.ebayimg.com/images/g/yokAAOSw8w1YARbm/s-l1200.jpg",
-  "genre": [
-    "Action",
-    "Crime",
-    "Drama"
-  ]
+  "genre": ["Action", "Crime", "Drama"],
+  "rate": 9.0
 }
 
 ### Borrar una pelicula
-DELETE http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+DELETE http://localhost:1234/movies/b19ea286-d75c-4662-b43f-c630b002b717
 
 ### Actualizar una pelicula
-PATCH http://localhost:1234/movies/9e6106f0-848b-4810-a11a-3d832a5610f9
+PATCH http://localhost:1234/movies/132b21da-b563-4d51-93f4-382b1448eada
 Content-Type: application/json
 
 {
-  "year": 2023
+  "year": 2022
 }

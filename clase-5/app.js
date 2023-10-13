@@ -1,3 +1,4 @@
+// importar dotenv para poder leer y usar las variables de entorno
 import 'dotenv/config';
 import express, { json } from 'express';
 import { corsMiddleware } from './middlewares/cors.js';
@@ -8,7 +9,7 @@ export const createApp = ({ movieModel }) => {
   const app = express();
 
   // captura la request y detecta si tiene que hacer la transformacion
-  // de JSON a string y agregar la cabecera Content-Type: application/json
+  // de JSON a string o viceversa y agregar la cabecera Content-Type: application/json
   app.use(json());
 
   // habilitar cors con la configuracion por defecto, acepta cualquier origen

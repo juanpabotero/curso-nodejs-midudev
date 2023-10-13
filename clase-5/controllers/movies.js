@@ -69,6 +69,9 @@ export class MovieController {
       id,
       input: result.data
     });
-    return res.json(updatedMovie);
+    if (updatedMovie) {
+      return res.json(updatedMovie);
+    }
+    return res.status(404).json({ message: 'Movie not found' });
   };
 }

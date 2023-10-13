@@ -23,8 +23,9 @@ const movieSchema = z.object({
       'Drama',
       'Fantasy',
       'Horror',
-      'Thriller',
-      'Sci-Fi'
+      'Romance',
+      'Sci-Fi',
+      'Thriller'
     ]),
     {
       required_error: 'Genre is required',
